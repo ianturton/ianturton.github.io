@@ -1,0 +1,17 @@
+# Site settings
+title: Ian's random blog 
+email: ijturton@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A place to store random thoughts, snippets of 
+  <a href='http://geotools.org'>GeoTools</a> code and other bits
+  and pieces of stuff I write sometimes.
+  <a href='http://stackexchange.com/users/195980'>
+  <img src='http://stackexchange.com/users/flair/195980.png' width='208' height='58' alt='profile for iant on Stack Exchange, a network of free, community-driven Q&amp;A sites' title='profile for iant on Stack Exchange, a network of free, community-driven Q&amp;A sites'>
+  </a>
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ianturton.github.io" # the base hostname & protocol for your site
+twitter_username: ijturton
+github_username:  ianturton
+
+# Build settings
+markdown: kramdown
