@@ -1,5 +1,6 @@
 ---
-title: Spatial Cluster Detection
+layout: post
+title: "Spatial Cluster Detection"
 categories: geotools geography gam
 ---
 
