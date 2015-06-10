@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Ian Turton is a freelance GeoComputationalist, for more information about services offered and terms please visit <a href="http://www.ianturton.com">www.ianturton.com</a>. 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+This blog is a repository for useful snippets of code that I develop in the course of writing a GeoTools Cookbook and other useful geospatial and java coding tips.
