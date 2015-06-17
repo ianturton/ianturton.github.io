@@ -129,7 +129,7 @@ SimpleFeatureType schema = featureReader.getFeatureType();
 So can I recreate XKCD's map with this function? First I had to find some data, luckily USGS came to my aid with a [shapefile of the continents](http://pubs.usgs.gov/of/2006/1187/basemaps/continents/). 
 My first attempt was nothing like the XKCD map as I had Asia and Europe as separate features, Great Britain was attached to Europe & New Zealand and Micronesia crossed the dateline and rotated way off to the right as a result. However once I had done some splitting and merging in [QGis](http://qgis.org) I could generate this map:
 
-![upside_down_cont.png](https://raw.githubusercontent.com/ianturton/ianturton.github.io/master/images/map.png)
+![upside_down_cont.png]({{site.url}}/images/map.png)
 
 As you can see it is **not** the same as XKCD's map. The main details are the same, the UK is across from North Korea but South Africa is on top of them. If I really needed to recreate his map I could use QGis to move Africa south and tidy up North America and the Canadian Islands. But I think I've been sniped enough so I'll leave that as an exercise for the reader.
 
