@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filling with text
+title: Filling up with text
 categories: styling geoserver geotools
 ---
 
