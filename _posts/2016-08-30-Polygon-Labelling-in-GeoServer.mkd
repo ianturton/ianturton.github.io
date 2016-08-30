@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Improved Polygon Labelling for GeoServer"
+categories: geoserver styling 
+---
+
+As part of the FOSS4G Code Sprint I worked with Casper Børgesen to implement
+Vladimir Agafonkin's [Polygon Labelling
+Algorithm](https://www.mapbox.com/blog/polygon-center/). This is a fast way of
+calculating the Pole of Inaccessibility of a polygon to allow us to place a
+label (or other related item) at the "widest" part of the polygon. While
+GeoServer has been able to use a `centroid` function for some time there are
+cases when the centroid doesn't fall within the polygon for these GeoTools and
+GeoServer have used the `interiorPoint` which at least guarantees to be on the
+polygon boundary if not actually inside.
+
+The work has now been merged into the GeoTool's [master
+branch](https://github.com/geotools/geotools/pull/1287) and after a [minor
+bug](https://github.com/geotools/geotools/pull/1290)
+fix today I could use it in GeoServer by simply dropping the jar file into the
+`WEB-INF/lib` folder of the latest release.
+
+A few short fixes to copies of the `population` style later, I could see what
+the outcome looked like.
+
+
+~~~~xml
+<TextSymbolizer>
+  <Geometry>
+    <ogc:Function name="centroid">
+      <ogc:PropertyName>the_geom</ogc:PropertyName>
+    </ogc:Function>
+  </Geometry>
+  <Label>
+~~~~
+
+![Centroid's](/images/centroid.png)
+
+If you look at the labels for Louisiana (LA) and Florida (FL) you will see that
+in both cases the label is either over the edge or right on the edge of the
+state. Obviously it would look much nicer if it wasn't, so I changed the name of
+the function being called in the `Geometry` section of the SLD to `interiorPoint` which gave the following map:
+
+![interior point](/images/interior.png)
+
+As you can now see, Florida looks better but Louisiana is actually slightly
+worse, this is one of the cases where we get back a point on the polygon
+boundary. If we now change the SLD to use the new function:
+
+~~~~xml
+<TextSymbolizer>
+  <Geometry>
+    <ogc:Function name="labelPoint">
+      <ogc:PropertyName>the_geom</ogc:PropertyName>
+      <ogc:Literal>1.0</ogc:Literal>
+    </ogc:Function>
+  </Geometry>
+  <Label>
+~~~~
+
+Note the second argument to the function - this is a tolerance value for the
+algorithm (but we may remove it and provide a sensible default later).
+This gives us the following map:
+
+![label point](/images/polylabel.png)
+
+Now Louisiana and Florida look good, with well placed labels.
+
+So please go ahead and test this out on your own data and let the mailing lists
+know if you find any issues. We are considering making this the default for
+GeoServer text symbolizers so it would be good to know if there are any issues
+before we do that.
+
