@@ -69,5 +69,6 @@ Now Louisiana and Florida look good, with well placed labels.
 So please go ahead and test this out on your own data and let the mailing lists
 know if you find any issues. We are considering making this the default for
 GeoServer text symbolizers so it would be good to know if there are any issues
-before we do that.
+before we do that. You can grab a SNAPSHOT jar from
+[https://repo.boundlessgeo.com/main/org/geotools/gt-polygon-labeller/16-SNAPSHOT/](https://repo.boundlessgeo.com/main/org/geotools/gt-polygon-labeller/16-SNAPSHOT/).
 
