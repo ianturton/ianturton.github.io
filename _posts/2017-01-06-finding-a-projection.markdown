@@ -23,6 +23,7 @@ point. One small wrinkle is the need to convert the distance to metres
 (otherwise the ones in feet are always 3 times further away than expected).
 
 The full code is available for you to experiment with
-[here](https://gitlab.com/snippets/34902).
+[here](https://gitlab.com/snippets/34902) and a
+[pom.xml](https://gitlab.com/snippets/35169) to build it with.
 
 
