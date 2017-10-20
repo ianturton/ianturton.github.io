@@ -5,9 +5,9 @@ description: > # this means to ignore newlines until "baseurl:"
   A place to store random thoughts, snippets of 
   <a href='http://geotools.org'>GeoTools</a> code and other bits
   and pieces of stuff I write sometimes.
-<a href="https://stackexchange.com/users/195980">
-<img src="https://stackexchange.com/users/flair/195980.png" width="208" height="58" alt="profile for Ian Turton on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Ian Turton on Stack Exchange, a network of free, community-driven Q&amp;A sites">
-</a>
+  <a href="https://stackexchange.com/users/195980">
+  <img src="https://stackexchange.com/users/flair/195980.png" width="208" height="58" alt="profile for Ian Turton on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Ian Turton on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+  </a>
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://blog.ianturton.com" # the base hostname & protocol for your site
 twitter_username: ijturton
