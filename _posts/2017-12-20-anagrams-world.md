@@ -35,3 +35,5 @@ The global winner is the 13 letter Port-Saint-Pere as perpetrations. Honourable 
 + Seven Sisters - restivenesss
 + Solbiate Arno - elaborations
 + Villeurbanne - invulnerable
+
+[Full results are on line](https://gitlab.com/snippets/1689735).
