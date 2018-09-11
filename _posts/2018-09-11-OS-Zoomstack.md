@@ -8,8 +8,7 @@ categories: geoserver
 Over the weekend I was playing around with the [Ordnance Survey's new
 Zoomstack](https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-zoomstack.html)
 and it is very nice. But I really wanted to see what it looked like in GeoServer
-with Charley Glynn's nice [SLDs](https://github.com/OrdnanceSurvey/Ordnance
-Survey-Open-Zoomstack-Stylesheets/tree/master/GeoPackage%20and%20PostGIS/Styled%20Layer%20Descriptors%20(SLD)),
+with Charley Glynn's nice [SLDs](https://github.com/OrdnanceSurvey/OS-Open-Zoomstack-Stylesheets),
 but then I would need to take each table in PostGIS and add it to GeoServer and
 add the SLD. There are 21 distinct layers (which is much better than the old
 days when you needed 100s of layers to cover the whole stack) but was still a
