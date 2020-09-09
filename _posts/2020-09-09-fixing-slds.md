@@ -6,8 +6,8 @@ categories: geoserver
 ---
 # Automating Fixing Broken Styles in GeoServer
 
-Every so often I discovered that I would got a problem with my GeoServer
-install some or all of the layers will lose their connection to the
+Every so often I discover that I have got a problem with my GeoServer
+install: some or all of the layers will lose their connection to the
 default Style or to one of their associated Styles. This happens more
 often on Windows machines that it does on Linux machines, so I've never
 worried too much about reporting it or investigating it.  
