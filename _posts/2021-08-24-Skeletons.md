@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Skeletization of Polygons
-date: 2021-08-23
+date: 2021-08-30
 categories: geotools
 ---
 
