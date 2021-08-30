@@ -53,4 +53,4 @@ But for more complex lakes (like Wast Water) you have to zoom in a long way to g
 
 ![Wast Water](/images/wastwater.png "Wast Water")
 
-In an ideal world I would then trim of the dangling lines and only keep the long central line, but I haven't worked out a good way to do that yet - can you help? The code is all available [here](https://gitlab.com/-/snippets/2166025).
+In an ideal world I would then trim of the dangling lines and only keep the long central line, but I haven't worked out a good way to do that yet - [can you help?](https://gis.stackexchange.com/q/409483/79) The code is all available [here](https://gitlab.com/-/snippets/2166025).
