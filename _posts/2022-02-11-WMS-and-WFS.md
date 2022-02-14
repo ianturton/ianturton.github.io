@@ -89,7 +89,7 @@ with WMS changed to WFS in the `SERVICE` parameter. Often you will need to chang
 Again, I've left the `INTERFACE` parameter in. Trying this URL in your browser or at the CLI with `curl` we 
 get back another [XML 
 file](https://environment.data.gov.uk/ds/wfs?SERVICE=WFS&INTERFACE=ENVIRONMENT--e9f68cafd7e937c07e697439493ff06d&request=GetCapabilities). 
-Scrolling through this we can see details of all the layers that we could want. So I can not use `ogr2ogr` to 
+Scrolling through this we can see details of all the layers that we could want. So I can now use `ogr2ogr` to 
 extract a CSV file of the amount of fish landed in each point:
 
     ogr2ogr -f CSV fish.csv  \
