@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
   <img src="https://stackexchange.com/users/flair/195980.png" width="208" height="58" alt="profile for Ian Turton on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Ian Turton on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://blog.ianturton.com" # the base hostname & protocol for your site
-twitter_username: ijturton
+mastodon_username: https://fosstodon.org/@ianturton
 github_username:  ianturton
 
 # Build settings
